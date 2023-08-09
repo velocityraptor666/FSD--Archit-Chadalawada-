@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This is a comment 
+//*UTF -> Unicode Transformation Format
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- background colour-->
+<body bgcolor="#9B7BD4">
+    <!-- //* heading elements-->
+    <h1> Recursion </h1>
+    <h2> Recursion </h2>
+    <h3> Recursion </h3>
+    <h4> Recursion </h4>
+    <h5> Recursion </h5>
+    <h6> Recursion </h6>
+
+    <!-- //*For paragraphs    (lorem -> Enter for random text)-->
+    
+    <!-- //? How to change font size & type of paragraph??-->
+    <p> Hello, WELCOME TO THE SQUAD!!</p>
+<!--
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Maiores eius voluptate iste, maxime eligendi ducimus ullam. 
+        Qui quasi sint voluptatum excepturi, perferendis natus quo officiis, 
+        sed molestias maxime voluptates! Recusandae.</p>
+-->
+    <!-- //*To include an image: (gifs included)-->
+    <img src="/Images/kung_fu_panda_waa.gif" alt="Childhood Memories">
+    <img src="/Images/Kung fu Panda.webp" alt="Your favorite little panda" 
+    width = 500 height = 250> 
+    <a href = "/DAY 1/about_cat.html">  <img = src="/Images/nyan_cat.gif" alt="Nyan Cat"> </a>
+
+    <!-- //? What abt videos??? -->
+
+    <!-- //* Making lists-->
+    <h2> Meet the Team:</h2>
+    <ol>
+        <li> <b style = "font-size: larger">Crazy Panda</b> </li>
+        <li>Shocked Panda</li>
+        <li>Flying rainbow Cat</li>
+    </ol>
+
+    <h2> Attributes of the squad:</h2>
+    <ul>
+        <li> Highly adaptive</li>
+        <li> Eat lots of food</li>
+        <li> Are very lazy</li>
+    </ul>
+
+
+    <!-- //*Making a table [ONLY ROWS!] ======> Note: You can use images also-->
+    <center> <table> 
+        <thead> <center> <big> <big> <b> <i> <u>Statistics 📊</u> </i> </b> </big> </big> </center></thead>
+        <caption> <h3> <u>Table-1:</u> </h3> </caption>
+        <tr>
+            <td> Power: </td>
+            <td> It's over 9000!</td>
+            <td>
+                <!-- *Using style types-->
+                <img src="/Images/ryu.gif" style="border : 4px solid rgb(168, 42, 168); border-radius: 25%; padding : 10px; margin : 20px">
+            </td>
+        </tr>
+        <tr>
+            <td> Fun: </td>
+            <td> 9.7/10</td>
+            <td>
+                <img src="/Images/celebration.webp" height="150">
+            </td>
+        </tr>
+        <tr>
+            <td> Age: </td>
+            <td> --Classified-- </td>
+            <td>
+                <img src="/Images/classified.jpg" height = "120" width = "250">
+            </td>
+        </tr>
+    </table>
+    </center>
+
+    
+    <h3> <a href = "/DAY 1/about_panda.html"> About Crazy Panda... </a> </h3>
+    <h3> Click on Nyan cat image for more info...</h3>
+
+
+    <!-- //* Forms used to get user input-->
+    <!-- !HOW DO FORMS WORK EXACTLY???-->
+    <!-- * Is name, value passed on as 
+        * var_name with its value when submitted(to php file -> server_side)  -->
+    
+    <h2> Join the gang today:</h2>
+    <!-- *Can do, <form action = php_file_name> to pass info after submit form-->
+    <form>
+        
+        <!-- *Textbox input  -->
+        <!-- ?How to get input validation??-->
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="action" value="Enter username">
+        <br><br>
+        <!-- ?How do I censor password entries???-->
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="action" value="Enter password">
+        <br><br><br><br>
+
+        
+        
+        <!-- *Radio Buttons-->
+
+        <!-- * NOTE: If I put same 'name' attribute, I can select only
+        *One radio box at a time, but if I have each 'name' attribute as 
+        *different, I can select multiple at the same time-->
+
+        <h3>Who's your favorite member?</h3>
+
+        <input type="radio" id="c_pan" name="ur_fav" value="Crazy Panda">
+        <label for="c_pan">Crazy Panda</label>
+        <br>
+
+        <input type="radio" id="s_pan" name="ur_fav" value="Shocked Panda">
+        <label for="s_pan">Shocked Panda</label>
+        <br>
+
+        <input type="radio" id="cat" name="ur_fav" value="Cat">
+        <label for="cat"> Nyan Cat</label>
+        <br><br><br><br>
+
+        
+        
+        
+        <!-- *Checkboxes   (Always allow multiple choices)-->
+        <!-- ?Checkboxes with only one choice allowed?????-->
+        <h3> How did you hear about us?</h3>
+
+        <input type="checkbox" id="tv" name="tv" value="true">
+        <label for="tv"> TV </label>
+        <br>
+
+        <input type="checkbox" id="newspaper" name="newspaper" value="true">
+        <label for="newspaper"> Newspaper</label>
+        <br>
+
+        <input type="checkbox" id="wom" name="wom" value="true">
+        <label for="wom"> Word of Mouth </label>
+        <br>
+
+        <!-- ?Nested inputs ?? (I want textbox to specify, if Other....)-->
+        <input type="checkbox" id="nota" name="nota" value="true">
+        <label for="nota"> Other(specify): </label>
+        <br>
+
+
+        <!-- *Clickable button-->
+        <!-- *Note: can also include 
+        *    <input type="button" value="Click" onclick="javascript_call">        -->
+        <h2>Fidget Clicker:</h2>
+        <input type="button" value="Click me!!">
+        <br>
+        <br>
+
+
+        <!-- *Submit box-->
+        <input type="submit" value="Submit Responses">
+        
+
+
+       
+       
+        <!-- *Note: Meaning of 'value':
+        * 1)In textbox, button, submit : Default text displayed
+        * 2)In radio/checkbox : Value passed to 'action' php_file-->
+    </form>
+
+
+    <h4> BTW, This is how water was formed in the Early universe:</h4>
+    <p> H<sub>2</sub> + 1/2O<sub>2</sub>  --> H<sub>2</sub>O</p>
+
+
+    <h3>This is Earth now, after water:</h3>
+    <p style="font-weight : 500; font-family :'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Varying font weight, and font family:</p> 
+    <video src="/Images/file_example_MP4_640_3MG.mp4" autoplay muted loop length="200" width="500">
+    <br><br>
+       
+</body>
+
+
+</html>

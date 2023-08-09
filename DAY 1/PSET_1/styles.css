@@ -1,0 +1,15 @@
+/**'#' is used to refer to ids*/
+#blue_box{
+    background-color: aqua;
+}
+
+/**'.' is used to refer to classes*/
+.headings
+{
+    color: red;
+}
+
+#b1
+{
+    background-color : green
+}

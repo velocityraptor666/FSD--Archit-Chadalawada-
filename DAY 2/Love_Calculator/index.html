@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="heading">
+            <h1 style="font-size: 50px; text-decoration: underline;">Friendship Calculator</h1>
+            <p>Calculate your Friendship.</p>
+        </div>
+
+        <form id="friendship_form">
+        <div class="main_content">
+            <div>
+                <label for="your_name">Your Name:</label> <br>
+                <input 
+                    type="text" 
+                    id="your_name" 
+                    placeholder="Enter Your Name" 
+                    spellcheck="false" 
+                    maxlength="30" 
+                    required
+                /> 
+            </div>
+
+            <br>
+
+            <div>
+                <label for="your_friends_name">Your (Imaginary) Friend's Name:</label> <br>
+                <input
+                    type="text" 
+                    id="your_friends_name" 
+                    placeholder="Don't lie, You don't have friends" 
+                    spellcheck="false" 
+                    maxlength="30" 
+                    required
+                    style="width:200px" 
+                /> 
+            </div>
+            <br>
+            <br>
+        </div>
+        </form>
+
+
+        <button type="submit"> ╰(*°▽°*)╯ CALCULATE!</button>
+
+        <div class="result">
+            <h1>Result</h1>
+            <div class="divider"></div>
+            <p id="friendship_score_is"></p>
+            <h1 id="friend_score"></h1>
+            <p id="friendship_info"></p>
+            <p id="reload"
+                style="cursor: pointer;
+                display: none;
+                margin-top: 30px;
+                font-weight: 700;"
+                onclick="window.location.reload();"
+            > Re-Calculate</p>
+        </div>
+
+    </div>
+
+    <script src="/DAY 2/Love_Calculator/script.js"></script>
+    
+</body>
+
+</html>
